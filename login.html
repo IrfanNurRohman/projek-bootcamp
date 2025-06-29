@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1">
+    <title>login | videobelajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+ <div class="navbar">
+    <span class="logo">videobelajar</span>
+ </div>
+<!-- Login Card -->
+ <div class="login-container">
+    <form class="login-card">
+        <h2>Masuk ke Akun</h2>
+        <p>Yuk, lanjutin belajarmu di video belajar.</p>
+        <label for="email">E-mail <span style="color:#ff3c3c">*</span></label>
+        <div class="input-group">
+            <input type="email" id="email" placeholder="Masukan email" required>
+        </div>
+        <label for="password">Kata Sandi <span style="color:#ff3c3c">*</span></label>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Masukan Kata Sandi" required>
+            <button class="show-hide" type="button" onclick="togglePassword()"></button>
+        </div>
+        <a href="#" class="forgot-link">Lupa password?</a>
+        <button class="btn btn-primary" type="submit">Masuk</button>
+        <button class="btn btn-secondary" type="button">Daftar</button>
+        <div class="divider">atau</div>
+        <button class="google-btn" type="button">
+            <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"/>
+            Masuk dengan Google
+        </button>
+
+    </form>
+
+ </div>
+ 
+</body>
+</html>
