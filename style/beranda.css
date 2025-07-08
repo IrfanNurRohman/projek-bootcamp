@@ -232,16 +232,25 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 1px solid #f3f3f3;
+    
+}
+
+.instructor-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .instructor {
-    font-size: 0.98rem;
-    font-weight: 500;
+    font-size: 1.04rem;
+    font-weight: 600;
+    color: #232323;
+    margin-bottom: 2px;
 }
 
 .job {
     font-size: 0.89rem;
-    color: #c39020;
+    color:black;
     margin-left: 6px;
 }
 
