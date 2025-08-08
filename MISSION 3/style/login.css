@@ -1,0 +1,129 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    background: #fffdeb;
+}
+
+.navbar {
+    padding: 1rem 2 rem;
+    border-bottom: 1px dashed #ccc;
+}
+
+.navbar h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.video {
+    color: #f46b00;
+    font-weight: bold;
+}
+.belajar {
+    color: #f46b00;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 400px;
+   
+}
+
+.login-box {
+    background: white ;
+    border: 2px solid #0076ff;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login-box h2 {
+    margin-top: 0;
+    font-size: 1rem;
+}
+.subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+form {
+    text-align: center;
+}
+label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: block;
+    margin: 0.8rem 0 0.3rem;
+    
+}
+.required {
+    color: red;
+}
+input[type="email"]
+input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.password-group {
+    position: relative;
+}
+
+.forgot {
+    text-align: right;
+    margin: 0.5rem 0 1rem;
+}
+
+.forgot a {
+    font-size: 0.75rem;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.green {
+    background-color: #34c759;
+    color: white;
+}
+
+.light-green {
+    background-color: #e7f9e7;
+    color: #34c759;
+}
+
+.separator {
+    text-align: center;
+    margin: 1rem 0;
+    color: #aaa;
+    font-size: 1rem;
+}
+
+.google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  color: #333;
+}
+.google img {
+  width: 20px;
+}
