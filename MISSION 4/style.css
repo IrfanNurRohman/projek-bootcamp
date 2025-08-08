@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Secular+One&display=swap');
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #105dd1;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2{
+      text-align: center;
+    }
+
+    #clock {
+        font-family: 'Secular One', sans-serif;
+        font-size: 15px;
+        padding: 20px 4%;
+        color: #105dd1;
+        border: 3px solid #105dd1;
+        background: -webkit-linear-gradient(#105dd1, #555, #020202);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        line-height: 15px;
+        font-weight: 200;
+        color:#105dd1;
+        border-radius: 8px;
+        box-shadow: 0 0 40px #105dd1;
+
+    }
+     
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+    input,select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    textarea{
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #eee;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }    
+    .done span {
+      text-decoration: line-through;
+      color: gray;
+      margin-left: 3px 3px;
+      width: 50%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+   
+    .priority-low { 
+      color: green; 
+      margin-left: 3px 5px;
+      width: 50%;
+      padding: 15px;
+      margin-top: 5px;
+      box-sizing: border-box;
+  
+     
+    }
+    .priority-medium {
+      color: orange;
+      margin-left: 3px 5px;
+      width: 50%;
+      padding: 15px;
+      margin-top: 5px;
+      box-sizing: border-box;
+     
+    
+     }
+    .priority-high {
+      color: red; 
+      margin-left: 3px 5px;
+      width: 50%;
+      padding: 15px;
+      margin-top: 5px;
+      box-sizing: border-box;
+      
+    }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    
+    }
+   
+    .delete-btn {
+      background-color: red;
+      color: white;
+      border: none;
+      margin-left: 5px;
+      width: 15%;
+      padding: 10px;
+      margin-top: 5px;
+      box-sizing: border-box;
+    }
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo app</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>To-Do List</h2>
+      <div>
+        <label>Profile:</label>
+        <p>Nama: Irfan Nur Rohman</p>
+        <p>Jabatan: Developer</p>
+        <div id="clock"></div>
+      </div>
+
+      <label for="task">Add Task (Tugas):</label>
+      <textarea id="task" rows="2" placeholder="Masukan tugas anda"></textarea>
+
+      <label for="date">Time (Tanggal):</label>
+      <input type="date" id="date" />
+
+      <label for="priority">Level Prioritas:</label>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <button onclick="addTask()">Submit</button>
+
+      <h3>To Do</h3>
+      <ul id="todoList"></ul>
+
+      <h3>Done</h3>
+      <ul id="doneList"></ul>
+
+      <div class="buttons">
+        <button onclick="clearAll()">Delete All</button>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
