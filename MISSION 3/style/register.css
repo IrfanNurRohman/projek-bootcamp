@@ -1,6 +1,6 @@
 :root {
   --primary: #ffa800; /* warna logo */
-  --success: #42c94b; /* warna tombol masuk */
+  --success: #42c94b; /* warna tombol daftar */
   --light-success: #d8f7dd;
   --bg: #fff9ed;
   --border: #ededed;
@@ -29,43 +29,49 @@ body {
   letter-spacing: 1px;
 }
 
-/* Centered login card */
-.login-container {
+/* Centered register card */
+.register-container {
   min-height: calc(100vh - 56px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.login-card {
+.register-card {
   background: #fff;
-  max-width: 370px;
+  max-width: 410px;
   width: 100%;
   margin: 36px 20px;
   border-radius: 12px;
   box-shadow: 0 3px 20px 0 rgba(200,200,200,0.11);
-  padding: 34px 26px 30px 26px;
+  padding: 36px 28px 32px 28px;
   box-sizing: border-box;
 }
-.login-card h2 {
+.register-card h2 {
   font-size: 1.7rem;
   font-weight: bold;
   text-align: center;
   margin: 0 0 8px 0;
 }
-.login-card p {
+.register-card p {
   font-size: 1rem;
   text-align: center;
   margin: 0 0 26px 0;
   color: var(--gray);
 }
-.login-card label {
+.register-card label {
   font-size: 0.97rem;
   margin-bottom: 3px;
   display: block;
   font-weight: 500;
 }
-.login-card input[type="email"],
-.login-card input[type="password"] {
+.required {
+  color: #ff3c3c;
+  font-size: 1em;
+}
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="tel"],
+.register-card input[type="password"] {
   width: 100%;
   padding: 10px 38px 10px 10px;
   border: 1px solid var(--input-border);
@@ -77,15 +83,17 @@ body {
   outline: none;
   transition: border 0.2s;
 }
-.login-card input[type="email"]:focus,
-.login-card input[type="password"]:focus {
+.register-card input[type="text"]:focus,
+.register-card input[type="email"]:focus,
+.register-card input[type="tel"]:focus,
+.register-card input[type="password"]:focus {
   border-color: var(--primary);
   background: #fff;
 }
-.login-card .input-group {
+.input-group {
   position: relative;
 }
-.login-card .show-hide {
+.show-hide {
   position: absolute;
   top: 50%;
   right: 9px;
@@ -97,16 +105,50 @@ body {
   font-size: 1.2rem;
   padding: 0 3px;
 }
-.login-card .forgot-link {
-  float: right;
-  margin-top: -12px;
-  margin-bottom: 14px;
+.forgot-link {
   font-size: 0.94rem;
   color: var(--primary);
   text-decoration: none;
 }
-/* Buttons */
-.login-card .btn {
+.row-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -11px;
+  margin-bottom: 15px;
+}
+.phone-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.phone-prefix {
+  display: flex;
+  align-items: center;
+  background: #f3f3f3;
+  border: 1px solid var(--input-border);
+  border-radius: 7px 0 0 7px;
+  padding: 0 12px 0 7px;
+  height: 41px;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 5px;
+}
+.phone-prefix .flag {
+  width: 22px;
+  height: 16px;
+  border-radius: 2px;
+  box-shadow: 0 0 1px #bbb;
+}
+.phone-group input[type="tel"] {
+  border-radius: 0 7px 7px 0;
+  margin-bottom: 0;
+  border-left: none;
+  padding-left: 10px;
+  height: 41px;
+  flex: 1;
+}
+.btn {
   width: 100%;
   padding: 11px;
   font-size: 1.09rem;
@@ -117,29 +159,29 @@ body {
   cursor: pointer;
   transition: background 0.2s;
 }
-.login-card .btn-primary {
+.btn-primary {
   background: var(--success);
   color: #fff;
 }
-.login-card .btn-primary:hover {
+.btn-primary:hover {
   background: #33b93d;
 }
-.login-card .btn-secondary {
+.btn-secondary {
   background: var(--light-success);
   color: #1a991b;
 }
-.login-card .btn-secondary:hover {
+.btn-secondary:hover {
   background: #b5e5bc;
 }
-.login-card .divider {
+.divider {
   text-align: center;
   color: #aaa;
   font-size: 0.96rem;
   margin: 12px 0 8px 0;
   position: relative;
 }
-.login-card .divider:before,
-.login-card .divider:after {
+.divider:before,
+.divider:after {
   content: "";
   display: inline-block;
   width: 40%;
@@ -148,8 +190,7 @@ body {
   vertical-align: middle;
   margin: 0 8px;
 }
-/* Google btn */
-.login-card .google-btn {
+.google-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,26 +203,29 @@ body {
   padding: 10px 0;
   cursor: pointer;
   transition: box-shadow 0.2s;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
   gap: 8px;
   text-align: center;
 }
-.login-card .google-btn img {
+.google-btn img {
   height: 20px;
-  margin-right: 8px;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* Responsive */
 @media (max-width: 500px) {
-  .login-card {
-    padding: 25px 7px 22px 7px;
-    margin: 22px 6px;
+  .register-card {
+    padding: 23px 7px 17px 7px;
+    margin: 18px 6px;
+    max-width: 97vw;
   }
   .navbar {
     padding-left: 12px;
   }
-  .login-card h2 {
+  .register-card h2 {
     font-size: 1.2rem;
   }
 }
