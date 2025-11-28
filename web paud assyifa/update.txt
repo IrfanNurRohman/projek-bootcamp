@@ -1,0 +1,14 @@
+- slicknav  [DONE]
+- galeri kasih icon close dan bagian share hapus (icon link) [DONE]
+- bagian guru icon cuman facebook dan ig [DONE]
+- Visi misi halaman baru [DONE]
+- bagian berita social share hapus [DONE]
+- Tentang kami ganti sambutan kepala sekolah (navbar) [DONE]
+- Kegiatan buat halaman baru (detail) [DONE]
+- bagian admin kasih keterengan slider ukuran image 1920x500 [DONE]
+- bagian teacher admin hapus kolom selain facebook dan ig [DONE]
+- bagian kontak masuk kasih fitur delete [DONE]
+- bagian event cuman ditampilkan tanggal [DONE]
+- Edit card flip di index 
+ 
+Deadline : Tanggal 11 Sabtu  
